@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Captcha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Account</h2>
+
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+
+      <div class="captcha-box">
+        <span id="captchaText"></span>
+        <button type="button" onclick="generateCaptcha()">↻</button>
+      </div>
+
+      <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
